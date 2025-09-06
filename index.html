@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Study Buddy - Notes & Flashcards</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>📚 Study Buddy</h1>
+
+    <!-- Notes Section -->
+    <section id="notes">
+      <h2>✍️ My Notes</h2>
+      <textarea id="noteInput" placeholder="Write your note here..."></textarea>
+      <button onclick="addNote()">Add Note</button>
+      <ul id="noteList"></ul>
+    </section>
+
+    <!-- Flashcards Section -->
+    <section id="flashcards">
+      <h2>🃏 Flashcards</h2>
+      <button onclick="generateFlashcards()">Generate Flashcards</button>
+      <div id="flashcardContainer"></div>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+      <h2>🎯 Quiz Mode</h2>
+      <button onclick="startQuiz()">Start Quiz</button>
+      <div id="quizContainer"></div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
